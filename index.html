@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Text-to-ImageSet Generation and Evaluation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -55,47 +55,88 @@
 
 <body>
 
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://keunhong.com">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://arxiv.org/abs/2404.01342">
+              DiffAgent
+            </a>
+            <a class="navbar-item" href="https://arxiv.org/abs/2410.18603">
+              AgentStore
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
+
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Why Settle for One?<br>
-              Text-to-Image <u>Set</u> Generation and Evaluation
+              Text-to-ImageSet Generation and Evaluation
               </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://chengyou-jia.github.io/" target="_blank">Chengyou Jia</a><sup>*</sup>,</span>
+                <a href="https://chengyou-jia.github.io/" target="_blank">Chengyou Jia</a><sup>1</sup></span>
               <span class="author-block">
-                <a href="https://king-wood-shen.github.io/Xin-Shen.github.io/" target="_blank">Xin Shen</a><sup>*</sup>,</span>
+                <a href="https://king-wood-shen.github.io/Xin-Shen.github.io/" target="_blank">Xin Shen</a><sup>1</sup></span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=8qX4Z5IAAAAJ" target="_blank">Zhuohang Dang</a>,
+                <a href="https://scholar.google.com/citations?user=8qX4Z5IAAAAJ" target="_blank">Zhuohang Dang</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                <a href="#" target="_blank">Changliang Xia</a>,
+                <a href="#" target="_blank">Changliang Xia</a><sup>1</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://weijiawu.github.io/" target="_blank">Weijia Wu</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://weijiawu.github.io/" target="_blank">Weijia Wu</a>,
+                <a href="#" target="_blank">Xinyu Zhang</a><sup>1</sup>,
+              </span> 
+              <span class="author-block">
+                <a href="https://hangwei12358.github.io/" target="_blank">Huangwei Qian</a><sup>3</sup>,
               </span>
               <span class="author-block">
-                <a href="#" target="_blank">Xinyu Zhang</a>,
+                <a href="https://www.a-star.edu.sg/cfar/about-cfar/management/prof-ivor-tsang" target="_blank">Ivor Tsang</a><sup>3</sup>,
               </span>
               <span class="author-block">
-                <a href="https://hangwei12358.github.io/" target="_blank">Huangwei Qian</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.a-star.edu.sg/cfar/about-cfar/management/prof-ivor-tsang" target="_blank">Ivor Tsang</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?hl=zh-CN&user=C3ujEF0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Minnan Luo</a>
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=C3ujEF0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Minnan Luo</a><sup>1,†</sup>
               </span>
             </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Xi'an Jiaotong University</span>
+              <span class="author-block"><sup>2</sup>National University of Singapore</span>
+              <span class="author-block"><sup>3</sup>CFAR, A*STAR</span>
+              <br>
+              <span class="eql-cntrb"><small><sup>†</sup>Corresponding Author.</small></span>
+            </div>
 
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://chengyou-jia.github.io/">Chengyou Jia</a></span>
-              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-            <!-- </div> --> 
+
+
+
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -340,7 +381,7 @@
   <div class="columns is-centered">
     <div class="column is-10">
         <h2 class="title is-3 has-text-centered" style="margin-bottom: 20px;">Leaderboard</h2>
-        <div class="box" style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
+        <div class="box" style="width: 1100px; margin: 0 auto; padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
             <!-- 类别选择器改为横向布局 -->
             <div class="category-selector" style="margin-bottom: 10px;">
                 <div class="tabs is-centered">
