@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>双层环形图</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+  <style>
+    #chart-container { width: 600px; height: 600px; margin: auto; }
+  </style>
+</head>
+<body>
+  <div id="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script>
+    // 子类（内层）
+    const innerLabels = [
+      "MS","ME","MV","MP","PD",
+      "CS","PSD","FD","IP","HD",
+      "MSH","CSY","CB","NI","HN",
+      "GP","DP","CP","PL","AB","EI","EI","HP","PI","TG","AA"
+    ];
+    const innerData = [
+      25,21,21,28,22,
+      36,20,20,20,20,
+      20,20,20,24,21,
+      23,22,27,22,20,25,23,21,21,24,25
+    ];
+    const innerFullNames = [
+      "Multi\nScenario", "Multi\nExpression", "Multi\nview", "Multi\npose", "Portrait\nDesign",
+      "Creative\nStyle", "Poster\nDesign", "Font\nDesign", "IP\nProduct", "Home\nDecoration",
+      "Movie\nShot", "Comic\nStory", "Children\nBook", "News\nIllustration", "Hist.\nNarrative",
+      "Growth\nProcess", "Draw\nProcess", "Cooking\nProcess", "Physical\nLaw", "Arch.\nBuilding",
+      "Evolution\nIllustration", "Education\nIllustration", "Historical\nPanel", "Product\nInstruction", "Travel\nGuide", "Activity\nArrange"
+    ];
+
+    // 父类（外层）
+    const outerLabels = ["CG", "DSG", "SG", "PG", "IG"];
+    const outerData = [117, 116, 105, 139, 114];
+    const outerFullNames = [
+      "Character\nGeneration",
+      "Design\nStyle\nGeneration",
+      "Story\nGeneration",
+      "Process\nGeneration",
+      "Instruction\nGeneration"
+    ];
+
+    const data = {
+      datasets: [
+        {
+          label: '子类',
+          data: innerData,
+          backgroundColor: [
+            // CG (Character Generation) - 浅蓝色系
+            '#BBD6F3', '#BBD6F3', '#BBD6F3', '#BBD6F3', '#BBD6F3',
+            // DSG (Design Style Generation) - 浅绿色系
+            '#B8E2CF', '#B8E2CF', '#B8E2CF', '#B8E2CF', '#B8E2CF',
+            // SG (Story Generation) - 浅紫色系
+            '#D9C1DB', '#D9C1DB', '#D9C1DB', '#D9C1DB', '#D9C1DB',
+            // PG (Process Generation) - 浅橙色系
+            '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE',
+            // IG (Instruction Generation) - 浅红色系
+            '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE'
+          ],
+          datalabels: { 
+            formatter: function(value, context) {
+              return innerLabels[context.dataIndex];
+            },
+            color: '#000000', 
+            font: { size: 10, weight: 'bold' }
+          },
+          radius: '70%'  // 内层半径
+        },
+        {
+          label: '父类',
+          data: outerData,
+          backgroundColor: [
+            '#4A90E2',  // CG - 深蓝色
+            '#56B794',  // DSG - 深绿色
+            '#9B6B9D',  // SG - 深紫色
+            '#E69B76',  // PG - 深橙色
+            '#E67B7B'   // IG - 深红色
+          ],
+          datalabels: { 
+            formatter: function(value, context) {
+              return outerFullNames[context.dataIndex];
+            },
+            color: '#000000', 
+            font: { size: 14, weight: 'bold' },
+            rotation: function(context) {
+              const angle = context.chart.getDatasetMeta(context.datasetIndex).data[context.dataIndex].startAngle + 
+                          (context.chart.getDatasetMeta(context.datasetIndex).data[context.dataIndex].endAngle - 
+                           context.chart.getDatasetMeta(context.datasetIndex).data[context.dataIndex].startAngle) / 2;
+              return angle * 180 / Math.PI - 90;
+            }
+          },
+          radius: '90%'  // 外层半径
+        }
+      ]
+    };
+
+    const config = {
+      type: 'doughnut',
+      data: data,
+      options: {
+        cutout: '0%',  // 将中心设置为实心
+        radius: '90%',  // 控制整体大小
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                if (context.datasetIndex === 0) {
+                  return innerFullNames[context.dataIndex];
+                } else {
+                  return outerFullNames[context.dataIndex] + ' (' + context.parsed + ')';
+                }
+              }
+            }
+          }
+        }
+      },
+      plugins: [ChartDataLabels]
+    };
+
+    new Chart(document.getElementById('myChart'), config);
+  </script>
+</body>
+</html>

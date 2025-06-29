@@ -1,0 +1,210 @@
+{
+    "Anole": {
+        "Aesthetics": 0.170,
+        "Prompt Alignment": {
+            "Overall": 0.534,
+            "Entity": 0.115,
+            "Attribute": 0.148,
+            "Relation": 0.090
+        },
+        "Visual Consistency": {
+            "Overall": 0.611,
+            "Identity": 0.264,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.570
+    },
+    "Show-o [47]": {
+        "Aesthetics": 0.206,
+        "Prompt Alignment": {
+            "Overall": 0.780,
+            "Entity": 0.233,
+            "Attribute": 0.287,
+            "Relation": 0.285
+        },
+        "Visual Consistency": {
+            "Overall": 0.785,
+            "Identity": 0.409,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.776
+    },
+    "Janus-Pro [7]": {
+        "Aesthetics": 0.333,
+        "Prompt Alignment": {
+            "Overall": 0.787,
+            "Entity": 0.224,
+            "Attribute": 0.272,
+            "Relation": 0.300
+        },
+        "Visual Consistency": {
+            "Overall": 0.785,
+            "Identity": 0.435,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.781
+    },
+    "Gemini & SD3 [12]": {
+        "Aesthetics": 0.500,
+        "Prompt Alignment": {
+            "Overall": 0.796,
+            "Entity": 0.287,
+            "Attribute": 0.244,
+            "Relation": 0.320
+        },
+        "Visual Consistency": {
+            "Overall": 0.794,
+            "Identity": 0.480,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.789
+    },
+    "Gemini & Pixart [6]": {
+        "Aesthetics": 0.447,
+        "Prompt Alignment": {
+            "Overall": 0.743,
+            "Entity": 0.206,
+            "Attribute": 0.279,
+            "Relation": 0.268
+        },
+        "Visual Consistency": {
+            "Overall": 0.765,
+            "Identity": 0.440,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.747
+    },
+    "Gemini & Hunyuan [26]": {
+        "Aesthetics": 0.410,
+        "Prompt Alignment": {
+            "Overall": 0.758,
+            "Entity": 0.197,
+            "Attribute": 0.276,
+            "Relation": 0.271
+        },
+        "Visual Consistency": {
+            "Overall": 0.774,
+            "Identity": 0.436,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.765
+    },
+    "Gemini & Flux-1 [24]": {
+        "Aesthetics": 0.533,
+        "Prompt Alignment": {
+            "Overall": 0.791,
+            "Entity": 0.249,
+            "Attribute": 0.302,
+            "Relation": 0.328
+        },
+        "Visual Consistency": {
+            "Overall": 0.790,
+            "Identity": 0.490,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.786
+    },
+    "ChatDit [22]": {
+        "Aesthetics": 0.414,
+        "Prompt Alignment": {
+            "Overall": 0.717,
+            "Entity": 0.296,
+            "Attribute": 0.326,
+            "Relation": 0.310
+        },
+        "Visual Consistency": {
+            "Overall": 0.726,
+            "Identity": 0.455,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.726
+    },
+    "ISG-Agent [5]": {
+        "Aesthetics": 0.256,
+        "Prompt Alignment": {
+            "Overall": 0.667,
+            "Entity": 0.146,
+            "Attribute": 0.178,
+            "Relation": 0.163
+        },
+        "Visual Consistency": {
+            "Overall": 0.703,
+            "Identity": 0.338,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.682
+    },
+    "AutoT2IS (ours)": {
+        "Aesthetics": 0.520,
+        "Prompt Alignment": {
+            "Overall": 0.729,
+            "Entity": 0.359,
+            "Attribute": 0.414,
+            "Relation": 0.356
+        },
+        "Visual Consistency": {
+            "Overall": 0.756,
+            "Identity": 0.515,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.743
+    },
+    "Gemini 2.0 Flash [15]": {
+        "Aesthetics": 0.430,
+        "Prompt Alignment": {
+            "Overall": 0.738,
+            "Entity": 0.428,
+            "Attribute": 0.383,
+            "Relation": 0.392
+        },
+        "Visual Consistency": {
+            "Overall": 0.747,
+            "Identity": 0.509,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.743
+    },
+    "GPT-4o [31]": {
+        "Aesthetics": 0.445,
+        "Prompt Alignment": {
+            "Overall": 0.663,
+            "Entity": 0.400,
+            "Attribute": 0.463,
+            "Relation": 0.383
+        },
+        "Visual Consistency": {
+            "Overall": 0.683,
+            "Identity": 0.501,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.693
+    },
+    "AutoT2IS + GPT-4o": {
+        "Aesthetics": 0.567,
+        "Prompt Alignment": {
+            "Overall": 0.754,
+            "Entity": 0.441,
+            "Attribute": 0.520,
+            "Relation": 0.416
+        },
+        "Visual Consistency": {
+            "Overall": 0.761,
+            "Identity": 0.571,
+            "Style": 0.0,
+            "Logic": 0.0
+        },
+        "Avg.": 0.763
+    }
+} 

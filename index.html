@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+  <style>
+    #chart-container { 
+      width: 600px; 
+      height: 600px; 
+      margin: 2rem auto; 
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Why Settle for One?<br>
+              Text-to-Image <u>Set</u> Generation and Evaluation
+              </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://chengyou-jia.github.io/" target="_blank">Chengyou Jia</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://king-wood-shen.github.io/Xin-Shen.github.io/" target="_blank">Xin Shen</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=8qX4Z5IAAAAJ" target="_blank">Zhuohang Dang</a>,
+              </span>
+              <span class="author-block">
+                <a href="#" target="_blank">Changliang Xia</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://weijiawu.github.io/" target="_blank">Weijia Wu</a>,
+              </span>
+              <span class="author-block">
+                <a href="#" target="_blank">Xinyu Zhang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://hangwei12358.github.io/" target="_blank">Huangwei Qian</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.a-star.edu.sg/cfar/about-cfar/management/prof-ivor-tsang" target="_blank">Ivor Tsang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=C3ujEF0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Minnan Luo</a>
+              </span>
+            </div>
+
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="https://chengyou-jia.github.io/">Chengyou Jia</a></span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            <!-- </div> --> 
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Data Hugging Face link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🤗
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/video.pptx.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Despite remarkable progress in Text-to-Image models, many real-world applications require generating
+              coherent image sets with diverse consistency requirements. Existing consistent methods often focus on a
+              specific domain with specific aspects of consistency, which significantly constrains their
+              generalizability to broader applications. In this paper, we propose a more challenging problem,
+              Text-to-ImageSet (T2IS) generation, which aims to generate sets of images that meet various consistency
+              requirements based on user instructions. To systematically study this problem, we first introduce
+              T2IS-Bench with 596 diverse instructions across 26 subcategories, providing comprehensive coverage for
+              T2IS generation. Building on this, we propose T2IS-Eval, an evaluation framework that transforms user
+              instructions into multifaceted assessment criteria and employs effective evaluators to adaptively assess
+              consistency fulfillment between criteria and generated sets. Subsequently, we propose AutoT2IS, a
+              training-free framework that maximally leverages pretrained Diffusion Transformers' in-context
+              capabilities to harmonize visual elements to satisfy both image-level prompt alignment and set-level
+              visual consistency. Extensive experiments on T2IS-Bench reveal that diverse consistency challenges all
+              existing methods, while our AutoT2IS significantly outperforms current generalized and even specialized
+              approaches. Our method also demonstrates the ability to enable numerous underexplored real-world
+              applications, confirming its substantial practical value. All our data and code will be publicly
+              available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Chart section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3" style="margin-bottom: 10px;">T2IS-Bench</h2>
+          <div id="chart-container" style="width: 600px; height: 600px; margin: 0 auto; padding: 5px;">
+            <canvas id="myChart"></canvas>
+          </div>
+          <p class="content has-text-justified" style="margin-top: 10px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            We introduce T2IS-Bench, a benchmark designed to comprehensively assess text-to-image synthesis models by reflecting real-world consistency requirements. The accompanying pie chart illustrates the balanced distribution of user instructions across 26 distinct subcategories, highlighting the benchmark's broad coverage and its utility in advancing evaluation practices for generative AI systems.
+          </p>
+          <script>
+            // 子类（内层）
+            const innerLabels = [
+              "MS","ME","MV","MP","PD",
+              "CS","PSD","FD","IP","HD",
+              "MSH","CSY","CB","NI","HN",
+              "GP","DP","CP","PL","AB","EI","EI","HP","PI","TG","AA"
+            ];
+            const innerData = [
+              25,21,21,28,22,
+              36,20,20,20,20,
+              20,20,20,24,21,
+              23,22,27,22,20,25,23,21,21,24,25
+            ];
+            const innerFullNames = [
+              "Multi-Scenario (25)", "Multi-Expression (21)", "Multi-view (21)", "Multi-pose (28)", "Portrait Design (22)",
+              "Creative Style (36)", "Poster Design (20)", "Font Design (20)", "IP Product (20)", "Home Decoration (20)",
+              "Movie Shot (20)", "Comic Story (20)", "Children Book (20)", "News Illustration (24)", "Hist. Narrative (21)",
+              "Growth Process (23)", "Draw Process (22)", "Cooking Process (27)", "Physical Law (22)", "Arch. Building (20)",
+              "Evolution Illustration (25)", "Education Illustration (23)", "Historical Panel (21)", "Product Instruction (21)", "Travel Guide (24)", "Activity Arrange (25)"
+            ];
+
+            // 父类（外层）
+            const outerLabels = ["CG", "DSG", "SG", "PG", "IG"];
+            const outerData = [117, 116, 105, 139, 114];
+            const outerFullNames = [
+              "Character Generation",
+              "Design Style Generation",
+              "Story Generation",
+              "Process Generation",
+              "Instruction Generation"
+            ];
+
+            const data = {
+              datasets: [
+                {
+                  label: '子类',
+                  data: innerData,
+                  backgroundColor: [
+                    // CG (Character Generation) - 浅蓝色系
+                    '#BBD6F3', '#BBD6F3', '#BBD6F3', '#BBD6F3', '#BBD6F3',
+                    // DSG (Design Style Generation) - 浅绿色系
+                    '#B8E2CF', '#B8E2CF', '#B8E2CF', '#B8E2CF', '#B8E2CF',
+                    // SG (Story Generation) - 浅紫色系
+                    '#D9C1DB', '#D9C1DB', '#D9C1DB', '#D9C1DB', '#D9C1DB',
+                    // PG (Process Generation) - 浅橙色系
+                    '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE', '#F3D1BE',
+                    // IG (Instruction Generation) - 浅红色系
+                    '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE', '#F3BEBE'
+                  ],
+                  datalabels: { 
+                    color: '#000000', 
+                    font: { size: 12, weight: 'bold' },
+                    anchor: 'center',
+                    align: 'center'
+                  },
+                  radius: '95%',  // 增加内圈大小
+                  weight: 1
+                },
+                {
+                  label: '父类',
+                  data: outerData,
+                  backgroundColor: [
+                    '#4A90E2',  // CG - 深蓝色
+                    '#56B794',  // DSG - 深绿色
+                    '#9B6B9D',  // SG - 深紫色
+                    '#E69B76',  // PG - 深橙色
+                    '#E67B7B'   // IG - 深红色
+                  ],
+                  datalabels: { 
+                    color: '#000000', 
+                    font: { size: 20, weight: 'bold' },
+                    anchor: 'center',
+                    align: 'center'
+                  },
+                  radius: '100%',  // 增加外圈大小
+                  weight: 1
+                }
+              ]
+            };
+
+            const config = {
+              type: 'doughnut',
+              data: data,
+              options: {
+                cutout: '0%',  // 将中心设置为实心
+                radius: '98%',  // 增加图表占比
+                layout: {
+                  padding: 0  // 移除图表内边距
+                },
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    callbacks: {
+                      label: function(context) {
+                        if (context.datasetIndex === 0) {
+                          return innerFullNames[context.dataIndex] + '';
+                        } else {
+                          return outerFullNames[context.dataIndex] + ' (' + context.parsed + ')';
+                        }
+                      }
+                    }
+                  },
+                  datalabels: {
+                    formatter: function(value, context) {
+                      if (context.datasetIndex === 0) {
+                        return innerLabels[context.dataIndex];
+                      } else {
+                        return outerLabels[context.dataIndex];
+                      }
+                    }
+                  }
+                }
+              },
+              plugins: [ChartDataLabels]
+            };
+
+            new Chart(document.getElementById('myChart'), config);
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 添加类别选择器和表格容器 -->
+  <div class="columns is-centered">
+    <div class="column is-10">
+        <h2 class="title is-3 has-text-centered" style="margin-bottom: 20px;">Leaderboard</h2>
+        <div class="box" style="padding: 1.25rem 1.25rem 0.5rem 1.25rem;">
+            <!-- 类别选择器改为横向布局 -->
+            <div class="category-selector" style="margin-bottom: 10px;">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li class="is-active" data-category="All"><a>All</a></li>
+                        <li data-category="Character Generation"><a>Character Generation</a></li>
+                        <li data-category="Design Style Generation"><a>Design Style Generation</a></li>
+                        <li data-category="Story Generation"><a>Story Generation</a></li>
+                        <li data-category="Process Generation"><a>Process Generation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 表格容器 -->
+            <div class="table-container">
+                <table class="table is-narrow is-hoverable is-fullwidth custom-table" id="modelScoresTable">
+                    <thead>
+                        <tr class="header-top">
+                            <th rowspan="2" class="sortable left-align" data-field="model">Model</th>
+                            <th rowspan="2" class="sortable" data-field="aesthetics">Aesthetics</th>
+                            <th colspan="3" class="category-header">Prompt Alignment</th>
+                            <th colspan="3" class="category-header">Visual Consistency</th>
+                            <th rowspan="2" class="sortable" data-field="avg">Avg.</th>
+                        </tr>
+                        <tr class="header-bottom">
+                            <th class="sortable" data-field="pa_entity">Entity</th>
+                            <th class="sortable" data-field="pa_attribute">Attribute</th>
+                            <th class="sortable" data-field="pa_relation">Relation</th>
+                            <th class="sortable" data-field="vc_identity">Identity</th>
+                            <th class="sortable" data-field="vc_style">Style</th>
+                            <th class="sortable" data-field="vc_logic">Logic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table content will be dynamically populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Method Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <div class="content has-text-centered">
+        <img src="static/images/method/evaluation.png" alt="Evaluation Framework" style="width: 100%; margin-bottom: 2rem;"/>
+        <img src="static/images/method/overview.png" alt="Method Overview" style="width: 100%;"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visualization Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Visualization</h2>
+      <div class="content has-text-centered">
+                <!-- First Carousel -->
+        <div class="er">
+          <div class="carousel-container">
+            <!-- 轮播图标题 -->
+            <h2 class="title is-4 has-text-centered carousel-title">AutoT2IS</h2>
+
+          <!-- 轮播图主体 -->
+          <div class="carousel-main">
+            <!-- 轮播图主体 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="./static/images/page1/0001_0019_merge.png" alt="Image 1" onerror="this.onerror=null; this.src='./static/images/placeholder.png';" />
+                  </div>
+                  <p class="image-description">Generate multiple 3D animated images of a happy hedgehog. The images should include settings such as being in a cozy nest, dressed in a miniature jacket, wearing a small collar, dressed in a festive outfit, and wearing a flower crown.</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="./static/images/page1/0001_0013_merge.png" alt="Image 2" onerror="this.onerror=null; this.src='./static/images/placeholder.png';" />
+                  </div>
+                  <p class="image-description">Generate multiple watercolor illustrations of a playful puppy. The images should include settings such as playing in the yard, swimming, wearing a training harness, chasing a ball, and wearing a small sweater.</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="./static/images/page1/0013_0009_merge.png" alt="Image 3" onerror="this.onerror=null; this.src='./static/images/placeholder.png';" />
+                  </div>
+                  <p class="image-description">This is a children's picture book illustration generation task consisting of 5 pages, titled "The Lion and the Clever Mouse." Scene and character IDs need to remain consistent throughout the book to ensure stylistic uniformity and…</p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 第二页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page2/0005_0001_merge.png" alt="Image 4" />
+                  </div>
+                  <p class="image-description">Please generate a brave knight character in a realistic style. He is wearing shiny silver armor, with a determined face, holding a greatsword. The first image shows him standing with both hands holding the sword across his chest...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page2/0005_0007_merge.png" alt="Image 5" />
+                  </div>
+                  <p class="image-description">Please generate a martial artist character in a traditional ink sketch style. He wears a sleeveless gi with a black belt, his muscular frame highlighting years of training. The first image shows him standing on one foot, arms...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page2/0005_0016_merge.png" alt="Image 5" />
+                  </div>
+                  <p class="image-description">Please generate a masked ninja character in a monochrome ink brush style. He wears a traditional shinobi outfit with a katana strap. The first image shows him standing on one foot, arms extended in a balanced pose; the second image...</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第3页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page3/0009_0011_merge.png" alt="Image 7" />
+                  </div>
+                  <p class="image-description">Generate product mockups featuring a vintage stamp-inspired logo that embodies old-world travel and exploration, with subtle distressed textures and classic serif typography. Apply the logo on 4 travel-related items: a leather luggage tag...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page3/0009_0012_merge.png" alt="Image 8" />
+                  </div>
+                  <p class="image-description">Create product mockups using an organic, hand-drawn logo design that combines minimalist botanical line art with a clean modern typeface, evoking natural purity. Feature this logo on 4 eco-friendly products: a reusable water bottle...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page3/0009_0016_merge.png" alt="Image 9" />
+                  </div>
+                  <p class="image-description">Generate product mockups featuring a handcrafted, rustic logo inspired by traditional woodcarving techniques. The logo should showcase intricate wood grain textures paired with vintage typography. Apply this logo on 4 artisanal...</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第4页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page4/0018_0004_merge.png" alt="Image 10" />
+                  </div>
+                  <p class="image-description">What are 5 steps for cooking pork shoulder steaks on a Weber Kettle Grill, including an image and brief description for each step?</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page4/0018_0009_merge.png" alt="Image 11" />
+                  </div>
+                  <p class="image-description">Please provide 5 steps for making Sweet Boondhi, </br>along with an image and a brief description for each step.</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page4/0018_0024_merge.png" alt="Image 12" />
+                  </div>
+                  <p class="image-description">Please provide a detailed guide on how to air fry bacon, including 5 steps. For each step, generate an image and include a brief description.</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第5页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page5/0011_0001_merge.png" alt="Image 10" />
+                  </div>
+                  <p class="image-description">Produce 4 images for a romantic movie. [SCENE-1] Young couple awkwardly bump into each other at a bookstore, books tumble to floor as they exchange glances. Use soft focus and warm tones to create a dreamy effect. [SCENE-2]...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page5/0011_0012_merge.png" alt="Image 11" />
+                  </div>
+                  <p class="image-description">Produce 4 images for a musical movie. [SCENE-1] Street performer begins singing, camera captures passionate expression as crowd gathers. Use a medium shot to capture his performance. [SCENE-2] Pull back to show growing...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page5/0011_0023_merge.png" alt="Image 12" />
+                  </div>
+                  <p class="image-description">Design 4 images for a superhero origin movie. [SCENE-1] Scientist works late in lab with experimental equipment and glowing screens. Use cool lighting to create a technological feel. [SCENE-2] Accident occurs with bright flashes and...</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第6页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page6/0020_0001_merge.png" alt="Image 10" />
+                  </div>
+                  <p class="image-description">Generate a detailed 4-stage image series illustrating the construction process of a modern skyscraper. Stage 1: Foundation excavation and groundwork preparation. Stage 2: Erection of the steel framework. Stage 3: Installation...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page6/0020_0014_merge.png" alt="Image 11" />
+                  </div>
+                  <p class="image-description">Generate a detailed 4-stage image series illustrating the construction process of a community center. Stage 1: Community planning and site clearing. Stage 2: Laying the foundation and constructing the basic structural framework...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page6/0020_0018_merge.png" alt="Image 12" />
+                  </div>
+                  <p class="image-description">Create a detailed 4-stage image series illustrating the construction process of a high-tech corporate headquarters. Stage 1: Site clearing and blueprint planning. Stage 2: Foundation work and structural framework erection. Stage 3...</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第7页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page7/0021_0011_merge.png" alt="Image 10" />
+                  </div>
+                  <p class="image-description">Please generate a scene of a flower blooming from bud to full blossom, containing 4 images arranged in chronological order, showing the flower's evolution from a closed bud to a fully opened blossom. All images must follow the natural...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page7/0016_0003_merge.png" alt="Image 11" />
+                  </div>
+                  <p class="image-description">Please generate a set of images depicting the growth of a sunflower from sprouting to full bloom. The first image shows a tiny sprout emerging from moist soil in the morning dew; the second image shows the young seedling with a few...</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page7/0016_0023_merge.png" alt="Image 12" />
+                  </div>
+                  <p class="image-description">Please generate a set of images showing the transformation of a shapeshifting blob creature from a formless mass to a defined entity. The first image features a small, amorphous puddle of liquid-like material pulsating on the ground...</p>
+                </div>
+              </div>
+            </div>
+            <!-- 第8页 -->
+            <div class="carousel-item">
+              <div class="carousel-grid">
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page8/0022_0003_merge.png" alt="Image 10" />
+                  </div>
+                  <p class="image-description">How is the volcanic eruption scientifically explained? Provide a detailed explanation of the principles behind the phenomenon, including relevant knowledge.</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page8/0022_0019_merge.png" alt="Image 11" />
+                  </div>
+                  <p class="image-description">What is the detailed process behind the formation of honey, including the principles and relevant knowledge? Please provide 4 images to describe it.</p>
+                </div>
+                <div class="grid-item">
+                  <div class="image-container">
+                    <img src="static/images/page8/0022_0020_merge.png" alt="Image 12" />
+                  </div>
+                  <p class="image-description">Can you provide a comprehensive scientific explanation of the rainbow phenomenon, detailing the underlying principles and relevant knowledge?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 导航按钮 -->
+          <button class="carousel-button prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-button next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <!-- 指示器 -->
+          <div class="carousel-indicators"></div>
+                      </div>
+            </div>
+          </div>
+
+        <!-- Spacer between first and second carousel -->
+        <div class="carousel-spacer"></div>
+
+        <!-- Second Carousel -->
+        <div class="er">
+          <div class="carousel-container-2">
+            <!-- 轮播图标题 -->
+            <h2 class="title is-4 has-text-centered carousel-title">AutoT2IS+GPT-4</h2>
+            <!-- 轮播图主体 -->
+            <div class="carousel-main">
+              <!-- 轮播内容 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page1/0006_0001_merge.png" alt="Image 1" />
+                    </div>
+                    <p class="image-description">Minimalist line style, using soft and smooth black lines to outline the subject. Each painting consists of only a few strokes with large areas of blank space, emphasizing simplicity and elegance. Generate 4 images with the subjects being a...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page1/0006_0008_merge.png" alt="Image 2" />
+                    </div>
+                    <p class="image-description">Please generate a set of 4 oil painting-style images depicting a bustling harbor. The first image shows the pier at dawn, with fishing boats setting out to sea and a light mist hanging over the water; the second image is set at noon, with...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page1/0006_0004_merge.png" alt="Image 3" />
+                    </div>
+                    <p class="image-description">Brush stroke style, imitating traditional Chinese ink painting, using black ink lines of varying thickness with slight smudging effects. Generate 4 images with the subjects being bamboo, plum blossom, pine tree, and lotus. Ensure the...</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 第二页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page2/0007_0006_merge.png" alt="Image 4" />
+                    </div>
+                    <p class="image-description">Generate a series of 4 classic comic book posters that share a unified, dynamic design style while spotlighting different iconic scenes. Unified Elements: Art Style & Colors: Bold, graphic design with primary colors (red, blue, yellow...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page2/0007_0014_merge.png" alt="Image 5" />
+                    </div>
+                    <p class="image-description">Generate a series of 4 abstract expressionism posters that share a unified, expressive style while exploring different emotional and visual themes. Unified Elements: Art Style & Colors: Bold, free-flowing brushstrokes with a vibrant...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page2/0007_0016_merge.png" alt="Image 5" />
+                    </div>
+                    <p class="image-description">Generate a series of 4 Botanical Wonderland posters that share a unified nature-inspired style while celebrating the beauty of flora. Use the following guidelines:Unified Elements: Art Style & Colors: Delicate, watercolor-inspired...</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第3页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page3/0015_0001_merge.png" alt="Image 7" />
+                    </div>
+                    <p class="image-description">Please generate a set of images depicting major historical events of Ancient Greece in the 5th century BCE. The first image shows the Battle of Marathon during the Greco-Persian Wars, where Greek soldiers are fiercely resisting the...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page3/0015_0004_merge.png" alt="Image 8" />
+                    </div>
+                    <p class="image-description">Please generate a set of images depicting the expansion of the Mongol Empire from the 13th to 14th centuries. The first image shows Mongol horsemen galloping across the steppe, preparing to attack a neighboring tribe; the second image...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page3/0015_0019_merge.png" alt="Image 9" />
+                    </div>
+                    <p class="image-description">Please generate a set of images illustrating the Age of Exploration (15th-16th century). The first image shows Christopher Columbus's fleet encountering Caribbean islands with indigenous Taíno people observing from shore; the second...</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第4页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page4/0016_0001_merge.png" alt="Image 10" />
+                    </div>
+                    <p class="image-description">Please generate a set of images depicting the growth of a real-world oak tree from seed to maturity. The first image shows an acorn buried in soft soil, surrounded by a few fallen leaves; the second image shows a young oak seedling just...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page4/0016_0003_merge.png" alt="Image 11" />
+                    </div>
+                    <p class="image-description">Please generate a set of images depicting the growth of a sunflower from sprouting to full bloom. The first image shows a tiny sprout emerging from moist soil in the morning dew; the second image shows the young seedling with a few leaves...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page4/0016_0009_merge.png" alt="Image 12" />
+                    </div>
+                    <p class="image-description">Please generate a set of images depicting the growth of a carnivorous Venus flytrap from seed to full maturity. The first image shows a tiny seed in wet soil inside a glass terrarium. The second image features a small sprout with its first...</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第5页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page5/0017_0004_merge.png" alt="Image 10" />
+                    </div>
+                    <p class="image-description">The final artwork is a simple and charming line drawing of a snowman holding flowers. The steps to create it are: Sketch the Head and Hat – Draw a round head with a small face, adding a tilted hat for character. Outline the Body and Arms...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page5/0017_0012_merge.png" alt="Image 11" />
+                    </div>
+                    <p class="image-description">This artwork showcases the step-by-step creation of an adorable sheep figurine. The process unfolds as follows: Form the Base Shape – Start by molding a smooth, rounded base as the foundation. Construct the Fluffy Wool – Arrange small...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page5/0017_0018_merge.png" alt="Image 12" />
+                    </div>
+                    <p class="image-description">This illustration showcases the gradual creation of a cheerful character wearing glasses. The process unfolds as follows: Sketch the Basic Head Shape – Start with a circle and add facial guidelines to position the features.Define the Face...</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第6页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page6/0018_0005_merge.png" alt="Image 10" />
+                    </div>
+                    <p class="image-description">Please provide 4 steps for chopping an onion, </br>including a visual representation and brief description for each step.</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page6/0018_0023_merge.png" alt="Image 11" />
+                    </div>
+                    <p class="image-description">Please provide 4 steps for making refrigerator dill pickles, </br>including an image and a brief description for each step.</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page6/0018_0026_merge.png" alt="Image 12" />
+                    </div>
+                    <p class="image-description">Could you provide a detailed guide on making cherry jam, </br>including 4 key steps? For each step, please include an illustrative image and a concise description.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第7页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page7/0019_0001_merge.png" alt="Image 10" />
+                    </div>
+                    <p class="image-description">Please generate a scene of an apple falling from a tree, containing 4 images arranged in chronological order, showing the process of the apple detaching from the tree and contacting the ground. All images must follow the physical law of...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page7/0019_0002_merge.png" alt="Image 11" />
+                    </div>
+                    <p class="image-description">Please generate a scene of a ball rolling off a table, containing 4 images arranged in chronological order, showing the ball rolling from the edge of the table and landing on the ground. All images must follow the physical laws of inertia...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page7/0019_0010_merge.png" alt="Image 12" />
+                    </div>
+                    <p class="image-description">Generate four images illustrating the motion of a rocket launch. The first image shows the rocket on the launch pad, engines igniting. The second image depicts the rocket accelerating upwards, with exhaust gases pushing against the...</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 第8页 -->
+              <div class="carousel-item-2">
+                <div class="carousel-grid">
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page8/0009_0001_merge.png" alt="Image 10" />
+                    </div>
+                    <p class="image-description">Generate product mockups featuring our new logo—a dynamic, minimalist swoosh reminiscent of Nike's iconic design that suggests speed and motion. Apply this logo across 4 products: Athletic running shoes, Performance sports t-shirt...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page8/0009_0006_merge.png" alt="Image 11" />
+                    </div>
+                    <p class="image-description">Generate product mockups featuring a futuristic, tech-inspired logo that integrates a subtle circuit board motif with a digital typeface. Use a monochromatic palette and apply the logo on 4 tech products: a VR headset, wireless...</p>
+                  </div>
+                  <div class="grid-item">
+                    <div class="image-container">
+                      <img src="static/images/ours+gpt/gpt_page8/0009_0011_merge.png" alt="Image 12" />
+                    </div>
+                    <p class="image-description">Generate product mockups featuring a vintage stamp-inspired logo that embodies old-world travel and exploration, with subtle distressed textures and classic serif typography. Apply the logo on 4 travel-related items: a leather luggage...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 导航按钮 -->
+            <button class="carousel-button-2 prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button-2 next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- 指示器 -->
+            <div class="carousel-indicators-2"></div>
+          </div>
+        </div>
+
+        <!-- Spacer between second and third carousel -->
+        <div class="carousel-spacer"></div>
+
+        <!-- Third Carousel -->
+        <div class="er">
+          <div class="carousel-container-3">
+            <!-- 轮播图标题 -->
+            <h2 class="title is-4 has-text-centered carousel-title">Diff</h2>
+            <!-- 轮播图主体 -->
+            <div class="carousel-main">
+              <!-- 轮播内容 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Please generate a masked ninja character in a monochrome ink brush style. He wears a traditional shinobi outfit with a katana...</div>
+                      <div class="task-header">Please generate a fearless pirate captain in a hand-drawn ink style. He wears a long coat with intricate golden embroidery...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/T2IS/0005_0016_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/T2IS/0005_0014_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">OnePrompt</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/OnePrompt/0005_0016_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/OnePrompt/0005_0014_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & SD3</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/Gemini & SD3/0005_0016_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/Gemini & SD3/0005_0014_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第二页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Generate multiple 3D animated images of a cute Labrador puppy with a glossy, chocolate brown coat. The images should include...</div>
+                      <div class="task-header">Please generate a space explorer character in a futuristic sci-fi style, showing only the head or upper body. He is wearing...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/T2IS/0001_0017_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/T2IS/0002_0006_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">OnePrompt</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/OnePrompt/0001_0017_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/OnePrompt/0002_0006_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & SD3</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/Gemini & SD3/0001_0017_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category1/Gemini & SD3/0002_0006_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第三页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Geometric abstract style, using basic geometric shapes such as circles, squares, and triangles to outline the subjects. The lines...</div>
+                      <div class="task-header">Create four horror movie posters using this ​<b>bone fracture font</b> (angular cracks in letters resembling broken limbs)...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/T2IS/0006_0002_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/T2IS/0008_0009_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">IP-Adapter</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/IP-Adapter/0006_0002_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/IP-Adapter/0008_0009_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & Flux-1</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/Gemini & Flux-1/0006_0002_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/Gemini & Flux-1/0008_0009_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第四页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Could you create four images showcasing a sleek, minimalist living room with neutral tones? First image: An open-concept space with low-profile...</div>
+                      <div class="task-header">Generate a series of 3 posters for a classic space adventure film that share a unified retro-futuristic...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/T2IS/0010_0001_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/T2IS/0007_0002_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">IP-Adapter</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/IP-Adapter/0010_0001_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/IP-Adapter/0007_0002_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & Flux-1</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/Gemini & Flux-1/0010_0001_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category2/Gemini & Flux-1/0007_0002_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第五页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Please generate a set of images showcasing the growth of a cherry blossom tree from seed to full bloom. The first image...</div>
+                      <div class="task-header">Please provide a detailed guide on how to make a bacon sandwich, including 4 key steps. For each step, generate an...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/T2IS/0016_0007_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/T2IS/0018_0011_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">MakeAnything</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/MakeAnything/0016_0007_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/MakeAnything/0018_0011_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & Pixart</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/Gemini & Pixart/0016_0007_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/Gemini & Pixart/0018_0011_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第六页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Could you provide a detailed guide on making cherry jam, including 4 key steps? For each step, please include an...</div>
+                      <div class="task-header">Generate a detailed 4-stage image series illustrating the construction process of a community center. Stage 1...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/T2IS/0018_0026_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/T2IS/0020_0014_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">MakeAnything</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/MakeAnything/0018_0026_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/MakeAnything/0020_0014_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & Pixart</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/Gemini & Pixart/0018_0026_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category4/Gemini & Pixart/0020_0014_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- 第七页 -->
+                <div class="carousel-item-3">
+                  <div class="comparison-grid">
+                    <!-- 任务标题行 -->
+                    <div class="task-headers">
+                      <div class="model-label"></div>
+                      <div class="task-header">Could you provide a detailed guide on creating a bun hairstyle, </br>including 5 steps with corresponding images and brief...</div>
+                      <div class="task-header">Please provide a detailed guide on 4 steps for cutting</br>wood closet shelves, including an image and brief...</div>
+                    </div>
+                    
+                    <!-- 第一个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">T2IS</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/T2IS/0024_0015_merge.png" alt="Model A - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/T2IS/0024_0012_merge.png" alt="Model A - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第二个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini 2.0 Flash</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/Gemini/0024_0015_merge.png" alt="Model B - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/Gemini/0024_0012_merge.png" alt="Model B - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- 第三个模型的结果行 -->
+                    <div class="model-row">
+                      <div class="model-label">Gemini & Hunyuan</div>
+                      <div class="comparison-row">
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/Gemini & Hunyuan/0024_0015_merge.png" alt="Model C - Task 1" />
+                          </div>
+                        </div>
+                        <div class="comparison-cell">
+                          <div class="image-container">
+                            <img src="static/images/diff/category5/Gemini & Hunyuan/0024_0012_merge.png" alt="Model C - Task 2" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            <!-- 导航按钮 -->
+            <button class="carousel-button-3 prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button-3 next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- 指示器 -->
+            <div class="carousel-indicators-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+
+  <style>
+    .tabs ul {
+        border-bottom-color: #dbdbdb;
+    }
+    .tabs li {
+        cursor: pointer;
+    }
+    .tabs li.is-active a {
+        border-bottom-color: #485fc7;
+        color: #485fc7;
+    }
+    .tabs a {
+        padding: 0.5em 2em;
+    }
+
+    /* 统一轮播图样式 */
+    .carousel-container,
+    .carousel-container-2,
+    .carousel-container-3 {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    /* 轮播图分隔符 */
+    .carousel-spacer {
+      width: 100%;
+      height: 40px;  /* 设置分隔高度 */
+      margin: 20px 0;  /* 上下外边距 */
+      background: linear-gradient(to bottom, transparent, #ffffff, transparent);  /* 渐变效果 */
+    }
+
+    /* 轮播图主体 */
+    .carousel-main {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* 轮播项统一样式 */
+    .carousel-item,
+    .carousel-item-2,
+    .carousel-item-3 {
+      display: none;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel-item.active,
+    .carousel-item-2.active,
+    .carousel-item-3.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* 网格布局统一样式 */
+    .carousel-grid,
+    .comparison-grid {
+      display: flex;
+      flex-direction: column;
+      /* gap: 30px; */
+    }
+
+    .grid-item,
+    .comparison-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    /* 图片容器统一样式 */
+    .image-container {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .image-container img {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+
+    /* 导航按钮统一样式 */
+    .carousel-button,
+    .carousel-button-2,
+    .carousel-button-3 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .carousel-button:hover,
+    .carousel-button-2:hover,
+    .carousel-button-3:hover {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .carousel-button.prev,
+    .carousel-button-2.prev,
+    .carousel-button-3.prev {
+      left: -50px;
+    }
+
+    .carousel-button.next,
+    .carousel-button-2.next,
+    .carousel-button-3.next {
+      right: -50px;
+    }
+
+    /* 指示器统一样式 */
+    .carousel-indicators,
+    .carousel-indicators-2,
+    .carousel-indicators-3 {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .indicator.active {
+      background: #000;
+    }
+
+    /* 图片描述统一样式 */
+    .image-description {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* 分割行样式 */
+    .split-row {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .grid-item-half {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .grid-item-half .image-container {
+      width: 100%;
+      height: 160px;
+    }
+
+    .grid-item-half .image-description {
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Styles for second carousel */
+    .carousel-container-2 {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .carousel-item-2 {
+      display: none;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel-item-2.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .carousel-button-2 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .carousel-button-2.prev {
+      left: -50px;
+    }
+
+    .carousel-button-2.next {
+      right: -50px;
+    }
+
+    .carousel-indicators-2 {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .carousel-indicators-2 .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-indicators-2 .indicator.active {
+      background: #000;
+    }
+
+    /* Carousel titles style */
+    .carousel-title-section .hero-body {
+      padding: 0 1.5rem;
+    }
+
+    .carousel-title {
+      margin-bottom: 0;
+      color: #363636;
+      font-weight: 300;
+    }
+
+    /* Styles for third carousel */
+    .carousel-container-3 {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;  /* 增加最大宽度 */
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+
+    /* 第三个轮播图的箭头位置 */
+    .carousel-button-3.prev {
+      left: -80px;  /* 增加左侧箭头距离 */
+    }
+
+    .carousel-button-3.next {
+      right: -80px;  /* 增加右侧箭头距离 */
+    }
+
+    .carousel-item-3 {
+      display: none;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel-item-3.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .carousel-button-3 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .carousel-indicators-3 {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    .carousel-indicators-3 .indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .carousel-indicators-3 .indicator.active {
+      background: #000;
+    }
+
+    /* Carousel titles style */
+    .carousel-title-section .hero-body {
+      padding: 0 1.5rem;
+    }
+
+    .carousel-title {
+      margin-bottom: 0;
+      color: #363636;
+      font-weight: 300;
+    }
+
+    /* Comparison Grid Styles */
+    .comparison-grid {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1500px;  /* 匹配容器宽度 */
+      /* padding: 20px; */
+    }
+
+    .task-headers {
+      display: flex;
+      align-items: center;
+    }
+
+    .task-header {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 10px;
+      color: #666;
+      
+    }
+
+    /* 为第七页的标题添加特定的 flex 比例 */
+    .carousel-container-3 .carousel-item-3:nth-child(7) .task-header:first-child {
+      flex: 5;
+    }
+    .carousel-container-3 .carousel-item-3:nth-child(7) .task-header:nth-child(2) {
+      flex: 4;
+    }
+
+
+
+    .model-label {
+      width: 30px;  /* 减小宽度 */
+      text-align: center;
+      padding-right: 2px;
+      font-weight: bold;
+      color: #363636;
+      writing-mode: vertical-rl;  /* 垂直文字 */
+      transform: rotate(180deg);  /* 逆时针旋转 */
+      white-space: nowrap;  /* 防止文字换行 */
+    }
+
+    .model-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .comparison-row {
+      flex: 1;
+      display: flex;
+      gap: 15px;
+    }
+
+    .comparison-cell {
+      flex: 1;
+    }
+
+    .comparison-cell .image-container {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 5px;  
+    }
+
+    .comparison-cell .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* 第三个轮播图的图片容器样式 */
+    .carousel-container-3 .comparison-cell .image-container {
+      width: auto;  /* 让宽度自适应 */
+      height: auto;  /* 让高度自适应 */
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-container-3 .comparison-cell .image-container img {
+      width: auto;  /* 设置图片宽度 */
+      height: 130px;  /* 高度按比例自适应 */
+      object-fit: contain;
+    }
+
+    /* 表格排序样式 */
+    .sortable {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .sortable::after {
+      content: '↕';  /* 默认显示双向箭头 */
+      position: absolute;
+      right: 8px;
+      color: #999;
+    }
+
+    .sortable.sorted-asc::after {
+      content: '↑';  /* 升序时显示向上箭头 */
+      color: #485fc7;
+    }
+
+    .sortable.sorted-desc::after {
+      content: '↓';  /* 降序时显示向下箭头 */
+      color: #485fc7;
+    }
+
+    /* 表格左对齐样式 */
+    .left-align {
+      text-align: left !important;
+    }
+
+    /* 表格加粗值样式 */
+    .bold-value {
+      font-weight: bold;
+      color: #485fc7;
+    }
+
+    .carousel-container-3 .carousel-item-3:nth-child(7) .comparison-row {
+      display: flex;
+      width: 100%;
+    }
+    .carousel-container-3 .carousel-item-3:nth-child(7) .comparison-cell:first-child {
+      flex: 5;
+    }
+    .carousel-container-3 .carousel-item-3:nth-child(7) .comparison-cell:nth-child(2) {
+      flex: 4;
+    }
+
+    .carousel-container-3 .carousel-item-3:nth-child(4) .comparison-row {
+      display: flex;
+      width: 100%;
+    }
+    .carousel-container-3 .carousel-item-3:nth-child(4) .comparison-cell:first-child {
+      flex: 4;
+    }
+    .carousel-container-3 .carousel-item-3:nth-child(4) .comparison-cell:nth-child(2) {
+      flex: 3;
+    }
+  </style>
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 初始化类别选择器
+        const tabs = document.querySelectorAll('.tabs li');
+        
+        // 初始化表格显示 All 类别的数据
+        filterByCategory('All');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有活动状态
+                tabs.forEach(t => t.classList.remove('is-active'));
+                // 设置当前选中状态
+                tab.classList.add('is-active');
+                // 获取类别并过滤表格
+                const category = tab.dataset.category;
+                filterByCategory(category);
+            });
+        });
+
+        // 初始化排序功能
+        const headers = document.querySelectorAll('.sortable');
+        headers.forEach(header => {
+            header.addEventListener('click', function() {
+                const field = this.dataset.field;
+                const isAscending = !this.classList.contains('sorted-asc');
+                
+                // 移除所有排序指示器
+                headers.forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                
+                // 添加新的排序指示器
+                this.classList.add(isAscending ? 'sorted-asc' : 'sorted-desc');
+                
+                sortTable(field, isAscending);
+            });
+        });
+    });
+
+    function filterByCategory(category) {
+        console.log('Selected category:', category); // 添加调试日志
+        const tableData = {
+            'All': [
+                ['SDXL-base', '4.12', '4.23', '4.15', '4.08', '4.21', '4.18', '4.16', '4.16'],
+                ['SDXL-refiner', '4.15', '4.25', '4.17', '4.10', '4.23', '4.20', '4.18', '4.18'],
+                ['SD2.1', '4.08', '4.19', '4.11', '4.04', '4.17', '4.14', '4.12', '4.12']
+            ],
+            'Character Generation': [
+                ['SDXL-base', '4.15', '4.26', '4.18', '4.11', '4.24', '4.21', '4.19', '4.19'],
+                ['SDXL-refiner', '4.18', '4.28', '4.20', '4.13', '4.26', '4.23', '4.21', '4.21'],
+                ['SD2.1', '4.11', '4.22', '4.14', '4.07', '4.20', '4.17', '4.15', '4.15']
+            ],
+            'Design Style Generation': [
+                ['SDXL-base', '4.14', '4.25', '4.17', '4.10', '4.23', '4.20', '4.18', '4.18'],
+                ['SDXL-refiner', '4.17', '4.27', '4.19', '4.12', '4.25', '4.22', '4.20', '4.20'],
+                ['SD2.1', '4.10', '4.21', '4.13', '4.06', '4.19', '4.16', '4.14', '4.14']
+            ],
+            'Story Generation': [
+                ['SDXL-base', '4.13', '4.24', '4.16', '4.09', '4.22', '4.19', '4.17', '4.17'],
+                ['SDXL-refiner', '4.16', '4.26', '4.18', '4.11', '4.24', '4.21', '4.19', '4.19'],
+                ['SD2.1', '4.09', '4.20', '4.12', '4.05', '4.18', '4.15', '4.13', '4.13']
+            ],
+            'Process Generation': [
+                ['SDXL-base', '4.11', '4.22', '4.14', '4.07', '4.20', '4.17', '4.15', '4.15'],
+                ['SDXL-refiner', '4.14', '4.24', '4.16', '4.09', '4.22', '4.19', '4.17', '4.17'],
+                ['SD2.1', '4.07', '4.18', '4.10', '4.03', '4.16', '4.13', '4.11', '4.11']
+            ]
+        };
+
+        const tbody = document.querySelector('#modelScoresTable tbody');
+        tbody.innerHTML = ''; // 清空表格
+
+        // 获取选中类别的数据
+        const data = tableData[category];
+        if (!data) {
+            console.error('No data found for category:', category); // 添加错误日志
+            return;
+        }
+
+        // 填充表格
+        data.forEach(row => {
+            const tr = document.createElement('tr');
+            row.forEach((cell, index) => {
+                const td = document.createElement('td');
+                td.textContent = cell;
+                if (index === 0) td.classList.add('left-align');
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+    }
+
+    // 页面加载时显示 All 类别的数据
+    document.addEventListener('DOMContentLoaded', function() {
+        filterByCategory('All');
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // 初始化第一个轮播图
+      function initCarousel(containerClass, itemClass, buttonClass, indicatorsClass) {
+        const container = document.querySelector(`.${containerClass}`);
+        const items = container.querySelectorAll(`.${itemClass}`);
+        const prevButton = container.querySelector(`.${buttonClass}.prev`);
+        const nextButton = container.querySelector(`.${buttonClass}.next`);
+        const indicatorsContainer = container.querySelector(`.${indicatorsClass}`);
+        
+        let currentIndex = 0;
+        let autoScrollInterval;
+
+        // 创建指示器
+        items.forEach((_, index) => {
+          const indicator = document.createElement('div');
+          indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
+          indicator.addEventListener('click', () => showSlide(index));
+          indicatorsContainer.appendChild(indicator);
+        });
+
+        // 显示指定幻灯片
+        function showSlide(index) {
+          items[currentIndex].classList.remove('active');
+          indicatorsContainer.children[currentIndex].classList.remove('active');
+
+          currentIndex = (index + items.length) % items.length;
+
+          items[currentIndex].classList.add('active');
+          indicatorsContainer.children[currentIndex].classList.add('active');
+        }
+
+        // 初始化第一张幻灯片
+        showSlide(0);
+
+        // 添加导航按钮事件
+        prevButton.addEventListener('click', () => {
+          showSlide(currentIndex - 1);
+          stopAutoScroll();
+        });
+
+        nextButton.addEventListener('click', () => {
+          showSlide(currentIndex + 1);
+          stopAutoScroll();
+        });
+
+        // 自动轮播
+        function startAutoScroll() {
+          stopAutoScroll();
+          autoScrollInterval = setInterval(() => {
+            showSlide(currentIndex + 1);
+          }, 5000);
+        }
+
+        function stopAutoScroll() {
+          if (autoScrollInterval) {
+            clearInterval(autoScrollInterval);
+            autoScrollInterval = null;
+          }
+        }
+
+        // 启动自动轮播
+        startAutoScroll();
+
+        // 鼠标悬停在容器上时暂停自动轮播
+        container.addEventListener('mouseenter', stopAutoScroll);
+        container.addEventListener('mouseleave', startAutoScroll);
+      }
+
+      // 初始化三个轮播图
+      initCarousel('carousel-container', 'carousel-item', 'carousel-button', 'carousel-indicators');
+      initCarousel('carousel-container-2', 'carousel-item-2', 'carousel-button-2', 'carousel-indicators-2');
+      initCarousel('carousel-container-3', 'carousel-item-3', 'carousel-button-3', 'carousel-indicators-3');
+    });
+
+    let currentMode = 'All';
+
+    const model_scores = {
+        "All": {
+            "Anole": {
+                "Aesthetics": 0.170,
+                "Prompt Alignment": {
+                    "Entity": 0.534,
+                    "Attribute": 0.611,
+                    "Relation": 0.570
+                },
+                "Visual Consistency": {
+                    "Identity": 0.115,
+                    "Style": 0.148,
+                    "Logic": 0.090
+                },
+                "Avg.": 0.264
+            },
+            "Show-o": {
+                "Aesthetics": 0.206,
+                "Prompt Alignment": {
+                    "Entity": 0.780,
+                    "Attribute": 0.785,
+                    "Relation": 0.776
+                },
+                "Visual Consistency": {
+                    "Identity": 0.233,
+                    "Style": 0.287,
+                    "Logic": 0.285
+                },
+                "Avg.": 0.264
+            },
+            "Janus-Pro": {
+                "Aesthetics": 0.333,
+                "Prompt Alignment": {
+                    "Entity": 0.787,
+                    "Attribute": 0.785,
+                    "Relation": 0.781
+                },
+                "Visual Consistency": {
+                    "Identity": 0.224,
+                    "Style": 0.272,
+                    "Logic": 0.300
+                },
+                "Avg.": 0.435
+            },
+            "Gemini & SD3": {
+                "Aesthetics": 0.500,
+                "Prompt Alignment": {
+                    "Entity": 0.796,
+                    "Attribute": 0.794,
+                    "Relation": 0.789
+                },
+                "Visual Consistency": {
+                    "Identity": 0.287,
+                    "Style": 0.244,
+                    "Logic": 0.320
+                },
+                "Avg.": 0.480
+            },
+            "Gemini & Pixart": {
+                "Aesthetics": 0.447,
+                "Prompt Alignment": {
+                    "Entity": 0.743,
+                    "Attribute": 0.765,
+                    "Relation": 0.747
+                },
+                "Visual Consistency": {
+                    "Identity": 0.206,
+                    "Style": 0.279,
+                    "Logic": 0.268
+                },
+                "Avg.": 0.440
+            },
+            "Gemini & Hunyuan": {
+                "Aesthetics": 0.410,
+                "Prompt Alignment": {
+                    "Entity": 0.758,
+                    "Attribute": 0.774,
+                    "Relation": 0.765
+                },
+                "Visual Consistency": {
+                    "Overall": 0.774,
+                    "Identity": 0.197,
+                    "Style": 0.276,
+                    "Logic": 0.271
+                },
+                "Avg.": 0.436
+            },
+            "Gemini & Flux-1": {
+                "Aesthetics": 0.533,
+                "Prompt Alignment": {
+                    "Entity": 0.791,
+                    "Attribute": 0.790,
+                    "Relation": 0.786
+                },
+                "Visual Consistency": {
+                    "Identity": 0.249,
+                    "Style": 0.302,
+                    "Logic": 0.328
+                },
+                "Avg.": 0.490
+            },
+            "ChatDit": {
+                "Aesthetics": 0.414,
+                "Prompt Alignment": {
+                    "Entity": 0.717,
+                    "Attribute": 0.726,
+                    "Relation": 0.726
+                },
+                "Visual Consistency": {
+                    "Identity": 0.296,
+                    "Style": 0.326,
+                    "Logic": 0.310
+                },
+                "Avg.": 0.455
+            },
+            "ISG-Agent": {
+                "Aesthetics": 0.256,
+                "Prompt Alignment": {
+                    "Entity": 0.667,
+                    "Attribute": 0.703,
+                    "Relation": 0.682
+                },
+                "Visual Consistency": {
+                    "Identity": 0.146,
+                    "Style": 0.178,
+                    "Logic": 0.163
+                },
+                "Avg.": 0.338
+            },
+            "AutoT2IS (ours)": {
+                "Aesthetics": 0.520,
+                "Prompt Alignment": {
+                    "Entity": 0.729,
+                    "Attribute": 0.756,
+                    "Relation": 0.743
+                },
+                "Visual Consistency": {
+                    "Identity": 0.359,
+                    "Style": 0.414,
+                    "Logic": 0.356
+                },
+                "Avg.": 0.515
+            },
+            "Gemini 2.0 Flash": {
+                "Aesthetics": 0.430,
+                "Prompt Alignment": {
+                    "Entity": 0.738,
+                    "Attribute": 0.747,
+                    "Relation": 0.743
+                },
+                "Visual Consistency": {
+                    "Identity": 0.428,
+                    "Style": 0.383,
+                    "Logic": 0.392
+                },
+                "Avg.": 0.509
+            },
+            "GPT-4o": {
+                "Aesthetics": 0.445,
+                "Prompt Alignment": {
+                    "Entity": 0.663,
+                    "Attribute": 0.683,
+                    "Relation": 0.693
+                },
+                "Visual Consistency": {
+                    "Identity": 0.400,
+                    "Style": 0.463,
+                    "Logic": 0.383
+                },
+                "Avg.": 0.501
+            },
+            "AutoT2IS + GPT-4o": {
+                "Aesthetics": 0.567,
+                "Prompt Alignment": {
+                    "Entity": 0.754,
+                    "Attribute": 0.761,
+                    "Relation": 0.763
+                },
+                "Visual Consistency": {
+                    "Identity": 0.441,
+                    "Style": 0.520,
+                    "Logic": 0.416
+                },
+                "Avg.": 0.571
+            }
+        },
+        "Character Generation": {
+            "PhotoMaker": {
+                "Aesthetics": 0.413,
+                "Prompt Alignment": {
+                    "Entity": 0.793,
+                    "Attribute": 0.799,
+                    "Relation": 0.762
+                },
+                "Visual Consistency": {
+                    "Identity": 0.482,
+                    "Style": 0.458,
+                    "Logic": 0.450
+                },
+                "Avg.": 0.552
+            },
+            "OnePrompt": {
+                "Aesthetics": 0.600,
+                "Prompt Alignment": {
+                    "Entity": 0.805,
+                    "Attribute": 0.807,
+                    "Relation": 0.766
+                },
+                "Visual Consistency": {
+                    "Identity": 0.520,
+                    "Style": 0.512,
+                    "Logic": 0.470
+                },
+                "Avg.": 0.590
+            },
+            "X-Flux": {
+                "Aesthetics": 0.428,
+                "Prompt Alignment": {
+                    "Entity": 0.834,
+                    "Attribute": 0.804,
+                    "Relation": 0.780
+                },
+                "Visual Consistency": {
+                    "Identity": 0.531,
+                    "Style": 0.529,
+                    "Logic": 0.521
+                },
+                "Avg.": 0.553
+            },
+            "AutoT2IS (ours)": {
+                "Aesthetics": 0.557,
+                "Prompt Alignment": {
+                    "Entity": 0.798,
+                    "Attribute": 0.788,
+                    "Relation": 0.764
+                },
+                "Visual Consistency": {
+                    "Identity": 0.609,
+                    "Style": 0.520,
+                    "Logic": 0.509
+                },
+                "Avg.": 0.619
+            }
+        },
+        "Design Style Generation": {
+            "IPAdapter-Flux": {
+                "Aesthetics": 0.514,
+                "Prompt Alignment": {
+                    "Entity": 0.856,
+                    "Attribute": 0.833,
+                    "Relation": 0.846
+                },
+                "Visual Consistency": {
+                    "Identity": 0.386,
+                    "Style": 0.455,
+                    "Logic": 0.517
+                },
+                "Avg.": 0.582
+            },
+            "AutoT2IS (ours)": {
+                "Aesthetics": 0.475,
+                "Prompt Alignment": {
+                    "Entity": 0.789,
+                    "Attribute": 0.791,
+                    "Relation": 0.792
+                },
+                "Visual Consistency": {
+                    "Identity": 0.339,
+                    "Style": 0.391,
+                    "Logic": 0.478
+                },
+                "Avg.": 0.533
+            }
+        },
+        "Story Generation": {
+            "ICLora-Story": {
+                "Aesthetics": 0.408,
+                "Prompt Alignment": {
+                    "Entity": 0.711,
+                    "Attribute": 0.739,
+                    "Relation": 0.702
+                },
+                "Visual Consistency": {
+                    "Identity": 0.078,
+                    "Style": 0.190,
+                    "Logic": 0.119
+                },
+                "Avg.": 0.361
+            },
+            "StoryDiffusion": {
+                "Aesthetics": 0.581,
+                "Prompt Alignment": {
+                    "Entity": 0.684,
+                    "Attribute": 0.728,
+                    "Relation": 0.670
+                },
+                "Visual Consistency": {
+                    "Identity": 0.182,
+                    "Style": 0.207,
+                    "Logic": 0.141
+                },
+                "Avg.": 0.413
+            },
+            "Story-Adapter": {
+                "Aesthetics": 0.578,
+                "Prompt Alignment": {
+                    "Entity": 0.749,
+                    "Attribute": 0.766,
+                    "Relation": 0.734
+                },
+                "Visual Consistency": {
+                    "Identity": 0.181,
+                    "Style": 0.328,
+                    "Logic": 0.226
+                },
+                "Avg.": 0.463
+            },
+            "AutoT2IS (ours)": {
+                "Aesthetics": 0.534,
+                "Prompt Alignment": {
+                    "Entity": 0.629,
+                    "Attribute": 0.698,
+                    "Relation": 0.660
+                },
+                "Visual Consistency": {
+                    "Identity": 0.262,
+                    "Style": 0.405,
+                    "Logic": 0.237
+                },
+                "Avg.": 0.456
+            }
+        },
+        "Process Generation": {
+            "MakeAnything": {
+                "Aesthetics": 0.358,
+                "Prompt Alignment": {
+                    "Entity": 0.636,
+                    "Attribute": 0.665,
+                    "Relation": 0.652
+                },
+                "Visual Consistency": {
+                    "Identity": 0.329,
+                    "Style": 0.340,
+                    "Logic": 0.222
+                },
+                "Avg.": 0.408
+            },
+            "AutoT2IS (ours)": {
+                "Aesthetics": 0.578,
+                "Prompt Alignment": {
+                    "Entity": 0.727,
+                    "Attribute": 0.754,
+                    "Relation": 0.739
+                },
+                "Visual Consistency": {
+                    "Identity": 0.314,
+                    "Style": 0.346,
+                    "Logic": 0.274
+                },
+                "Avg.": 0.493
+            }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // 初始化类别选择器
+        const categorySelect = document.getElementById('categorySelect');
+        categorySelect.value = currentMode;
+        
+        populateTable();
+        
+        const headers = document.querySelectorAll('.sortable');
+        headers.forEach(header => {
+            header.addEventListener('click', function() {
+                const field = this.dataset.field;
+                const isAscending = !this.classList.contains('sorted-asc');
+                
+                // 移除所有排序指示器
+                headers.forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                
+                // 添加新的排序指示器
+                this.classList.add(isAscending ? 'sorted-asc' : 'sorted-desc');
+                
+                sortTable(field, isAscending);
+            });
+        });
+    });
+
+    function populateTable() {
+        const tbody = document.querySelector('#modelScoresTable tbody');
+        tbody.innerHTML = ''; // 清空表格内容
+        
+        const currentData = model_scores[currentMode];
+        if (!currentData || Object.keys(currentData).length === 0) {
+            return; // 如果没有数据，直接返回
+        }
+        
+        const rows = Object.entries(currentData);
+        
+        // 找到每列的最大值
+        const maxValues = {
+            'Aesthetics': Math.max(...rows.map(([_, d]) => d.Aesthetics)),
+            'Entity': Math.max(...rows.map(([_, d]) => d["Prompt Alignment"].Entity)),
+            'Attribute': Math.max(...rows.map(([_, d]) => d["Prompt Alignment"].Attribute)),
+            'Relation': Math.max(...rows.map(([_, d]) => d["Prompt Alignment"].Relation)),
+            'Identity': Math.max(...rows.map(([_, d]) => d["Visual Consistency"].Identity)),
+            'Style': Math.max(...rows.map(([_, d]) => d["Visual Consistency"].Style)),
+            'Logic': Math.max(...rows.map(([_, d]) => d["Visual Consistency"].Logic)),
+            'Avg': Math.max(...rows.map(([_, d]) => d["Avg."]))
+        };
+
+        rows.forEach(([model, scores]) => {
+            const tr = document.createElement('tr');
+            if (model.includes('AutoT2IS')) {
+                tr.classList.add('highlight-row');
+            }
+
+            const isMaxAesthetics = scores.Aesthetics === maxValues.Aesthetics;
+            const isMaxEntity = scores["Prompt Alignment"].Entity === maxValues.Entity;
+            const isMaxAttribute = scores["Prompt Alignment"].Attribute === maxValues.Attribute;
+            const isMaxRelation = scores["Prompt Alignment"].Relation === maxValues.Relation;
+            const isMaxIdentity = scores["Visual Consistency"].Identity === maxValues.Identity;
+            const isMaxStyle = scores["Visual Consistency"].Style === maxValues.Style;
+            const isMaxLogic = scores["Visual Consistency"].Logic === maxValues.Logic;
+            const isMaxAvg = scores["Avg."] === maxValues.Avg;
+
+            tr.innerHTML = `
+                <td class="left-align">${model}</td>
+                <td class="${isMaxAesthetics ? 'bold-value' : ''}">${formatNumber(scores.Aesthetics)}</td>
+                <td class="${isMaxEntity ? 'bold-value' : ''}">${formatNumber(scores["Prompt Alignment"].Entity)}</td>
+                <td class="${isMaxAttribute ? 'bold-value' : ''}">${formatNumber(scores["Prompt Alignment"].Attribute)}</td>
+                <td class="${isMaxRelation ? 'bold-value' : ''}">${formatNumber(scores["Prompt Alignment"].Relation)}</td>
+                <td class="${isMaxIdentity ? 'bold-value' : ''}">${formatNumber(scores["Visual Consistency"].Identity)}</td>
+                <td class="${isMaxStyle ? 'bold-value' : ''}">${formatNumber(scores["Visual Consistency"].Style)}</td>
+                <td class="${isMaxLogic ? 'bold-value' : ''}">${formatNumber(scores["Visual Consistency"].Logic)}</td>
+                <td class="${isMaxAvg ? 'bold-value' : ''}">${formatNumber(scores["Avg."])}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    function filterByCategory(category) {
+        currentMode = category;
+        populateTable();
+    }
+
+    function formatNumber(num) {
+        return num.toFixed(3);
+    }
+
+    function getColumnIndex(field) {
+        const fieldMap = {
+            'model': 0,
+            'aesthetics': 1,
+            'pa_entity': 2,
+            'pa_attribute': 3,
+            'pa_relation': 4,
+            'vc_identity': 5,
+            'vc_style': 6,
+            'vc_logic': 7,
+            'avg': 8
+        };
+        return fieldMap[field];
+    }
+
+    function sortTable(field, ascending = true) {
+        const tbody = document.querySelector('#modelScoresTable tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        
+        // 记录每一行的初始位置
+        const initialPositions = rows.map(row => {
+            const rect = row.getBoundingClientRect();
+            return rect.top;
+        });
+        
+        // 对行进行排序
+        rows.sort((a, b) => {
+            let aValue, bValue;
+            
+            if (field === 'model') {
+                aValue = a.cells[0].textContent;
+                bValue = b.cells[0].textContent;
+                return ascending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+            } else {
+                const index = getColumnIndex(field);
+                aValue = parseFloat(a.cells[index].textContent);
+                bValue = parseFloat(b.cells[index].textContent);
+                return ascending ? aValue - bValue : bValue - aValue;
+            }
+        });
+
+        // 将排序后的行添加到表格中
+        rows.forEach(row => tbody.appendChild(row));
+        
+        // 获取排序后的位置并设置动画
+        rows.forEach((row, index) => {
+            const newPosition = row.getBoundingClientRect().top;
+            const initialPosition = initialPositions[rows.indexOf(row)];
+            const delta = initialPosition - newPosition;
+            
+            // 设置初始位置
+            requestAnimationFrame(() => {
+                row.style.transform = `translateY(${delta}px)`;
+                
+                // 在下一帧移动到新位置
+                requestAnimationFrame(() => {
+                    row.style.transform = '';
+                });
+            });
+        });
+    }
+  </script>
+
+
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
